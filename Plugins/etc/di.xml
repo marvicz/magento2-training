@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Cms\Controller\Index\Index" type="\Training\Plugins\Controller\Index" />
+
+    <!-- Training plugin -->
+    <type name="\Training\Plugins\Controller\Index">
+        <plugin name="example_training_plugin" type="\Training\Plugins\Plugin\TrainingPlugin" sortOrder="1" />
+    </type>
+</config>
