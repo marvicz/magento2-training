@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<!-- If these events would be used in the global codearea (not in frontend controller), the events.xml file would be placed in /etc only -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="training_observer_event_before">
+        <observer name="TrainingBeforeObserver" instance="\Training\Observer\Observer\DoBefore" />
+    </event>
+    <event name="training_observer_event_after">
+        <observer name="TrainingAfterObserver" instance="\Training\Observer\Observer\DoAfter" />
+    </event>
+</config>
